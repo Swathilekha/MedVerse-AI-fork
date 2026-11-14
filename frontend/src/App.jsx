@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AuthPage from "./AuthPage";
+import Landing from "./Landing";
 import PatientDashboard from "./PatientDashboard";
 import {
   getFusionResult,
@@ -1246,6 +1247,8 @@ function App() {
     }
   });
 
+  const [authMode, setAuthMode] = useState(null);
+
   const handleAuthSuccess = (userData) => {
     localStorage.setItem("medverse_user", JSON.stringify(userData));
     setUser(userData);
@@ -1255,9 +1258,20 @@ function App() {
     localStorage.removeItem("medverse_user");
     localStorage.removeItem("medverse_token");
     setUser(null);
+    setAuthMode(null);
   };
 
-  if (!user) return <AuthPage onAuthSuccess={handleAuthSuccess} />;
+  if (!user) {
+    if (!authMode) return <Landing onStart={setAuthMode} />;
+    return (
+      <AuthPage
+        key={authMode}
+        initialMode={authMode}
+        onAuthSuccess={handleAuthSuccess}
+        onBack={() => setAuthMode(null)}
+      />
+    );
+  }
 
   if (user.role === "patient") {
     return <PatientDashboard user={user} onLogout={handleLogout} />;

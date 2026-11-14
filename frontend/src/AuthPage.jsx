@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { loginUser, registerUser } from "./api";
 
-export default function AuthPage({ onAuthSuccess }) {
-  const [mode, setMode] = useState("login");
+export default function AuthPage({ onAuthSuccess, initialMode = "login", onBack }) {
+  const [mode, setMode] = useState(initialMode);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,6 +35,7 @@ export default function AuthPage({ onAuthSuccess }) {
   return (
     <main className="auth-shell">
       <section className="auth-card">
+        {onBack && <button type="button" className="auth-back" onClick={onBack}>← Back to home</button>}
         <div className="auth-brand-mark">M</div>
         <p className="auth-kicker">MULTIMODAL CLINICAL PLATFORM</p>
         <h1>Welcome to MedVerse AI</h1>
