@@ -1,0 +1,7 @@
+Model,Records,Accuracy,Precision,Recall,F1,ROC-AUC,PR-AUC,Balanced Accuracy
+X-ray-only,723,68.88,30.51,54.14,39.02,67.86,33.49,63.17
+Text-only,723,97.1,90.58,93.98,92.25,99.52,97.38,95.89
+History-only,723,89.76,72.18,72.18,72.18,89.56,76.2,82.95
+Early Fusion Best,723,98.2,95.45,94.74,95.09,99.85,99.33,96.86
+Early Fusion Continued,723,99.17,95.68,100.0,97.79,99.91,99.59,99.49
+Joint Fusion,723,99.45,97.08,100.0,98.52,99.98,99.89,99.66

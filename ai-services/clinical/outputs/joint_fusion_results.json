@@ -1,0 +1,47 @@
+{
+    "model": "Joint Fusion",
+    "fusion_type": "Joint multimodal cross-attention fusion",
+    "architecture": {
+        "image_encoder": "DenseNet121 spatial feature encoder",
+        "text_encoder": "2-layer bidirectional LSTM",
+        "cross_modal_fusion": "bidirectional image-text cross-attention",
+        "image_tokens": "DenseNet spatial regions; no global pooling before attention",
+        "interaction_features": [
+            "pooled image representation",
+            "masked pooled text representation",
+            "element-wise product",
+            "absolute difference"
+        ]
+    },
+    "device": "cpu",
+    "total_records": 5974,
+    "train_records": 4786,
+    "validation_records": 1188,
+    "vocabulary_size": 2888,
+    "max_sequence_length": 256,
+    "image_size": 160,
+    "image_token_dim": 256,
+    "attention_heads": 4,
+    "checkpoint": "ai-services/clinical/outputs\\joint_fusion_best.pt",
+    "checkpoint_best_epoch": 11,
+    "checkpoint_best_val_roc_auc": 0.999874533146592,
+    "final_metrics": {
+        "accuracy": 0.9957912457912458,
+        "precision": 0.9710982658959537,
+        "recall": 1.0,
+        "f1_score": 0.9853372434017595,
+        "roc_auc": 0.999874533146592,
+        "confusion_matrix": [
+            [
+                1015,
+                5
+            ],
+            [
+                0,
+                168
+            ]
+        ],
+        "loss": 0.038936470082737186
+    },
+    "note": "Evaluation-only run using the saved best Joint Fusion checkpoint. No model parameters were updated."
+}

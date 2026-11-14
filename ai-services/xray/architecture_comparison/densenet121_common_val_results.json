@@ -1,0 +1,27 @@
+{
+    "model": "DenseNet121",
+    "evaluation_type": "Existing checkpoint evaluated on final clean validation split",
+    "manifest": "data/clinical_text/fusion_experiment_dataset.csv",
+    "checkpoint": "ai-services/xray/outputs/best_densenet121_finetuned_cpu.pth",
+    "device": "cpu",
+    "image_size": 160,
+    "validation_records": 1188,
+    "validation_normal": 1020,
+    "validation_pneumonia": 168,
+    "patient_overlap": 0,
+    "accuracy": 0.7037037037037037,
+    "precision": 0.24157303370786518,
+    "recall": 0.5119047619047619,
+    "f1": 0.3282442748091603,
+    "roc_auc": 0.669438608776844,
+    "confusion_matrix": [
+        [
+            750,
+            270
+        ],
+        [
+            82,
+            86
+        ]
+    ]
+}

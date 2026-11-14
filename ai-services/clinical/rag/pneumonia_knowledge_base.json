@@ -1,0 +1,38 @@
+[
+  {
+    "id": "CDC_SYMPTOMS",
+    "topic": "symptoms",
+    "title": "CDC - About Pneumonia",
+    "section": "Common symptoms",
+    "keywords": "symptoms cough fever chills chest pain fatigue confusion shortness of breath nausea vomiting diarrhea",
+    "text": "Common symptoms of pneumonia include chest pain when breathing or coughing, altered mental status or confusion, cough, fatigue, fever or chills, nausea, vomiting or diarrhea, and shortness of breath.",
+    "source": "https://www.cdc.gov/pneumonia/about/"
+  },
+  {
+    "id": "IDSA_DIAGNOSIS",
+    "topic": "diagnosis",
+    "title": "IDSA - CAP Clinical Pathway",
+    "section": "Adult CAP diagnostic criteria",
+    "keywords": "diagnosis diagnostic criteria pulmonary infiltrate chest imaging respiratory symptoms cough sputum dyspnea pleuritic chest pain abnormal lung sounds fever leukocytosis hypoxia",
+    "text": "Adult community-acquired pneumonia diagnostic criteria: newly recognized pulmonary infiltrate or infiltrates on chest imaging AND at least one respiratory symptom AND at least one other sign or finding. Respiratory symptoms include new or increased cough, new or increased sputum production, dyspnea, or pleuritic chest pain. Other findings include abnormal lung sounds such as rhonchi or rales, fever of at least 100.4 F, leukocytosis or unexplained bandemia, or hypoxia below 90%. If clinical suspicion is high despite a negative chest radiograph, consider chest CT.",
+    "source": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf"
+  },
+  {
+    "id": "IDSA_SEVERITY",
+    "topic": "severity",
+    "title": "IDSA - CAP Clinical Pathway",
+    "section": "Severe CAP criteria",
+    "keywords": "severity severe pneumonia major minor criteria septic shock vasopressors mechanical ventilation respiratory failure respiratory rate oxygen pao2 fio2 multilobar infiltrates confusion uremia leukopenia thrombocytopenia hypothermia hypotension",
+    "text": "Severe community-acquired pneumonia is defined by one major criterion OR three or more minor criteria. Major criteria are septic shock requiring vasopressors and respiratory failure requiring mechanical ventilation. Minor criteria are respiratory rate at least 30 breaths per minute, PaO2/FiO2 ratio at most 250, multilobar infiltrates, confusion or disorientation, uremia with blood urea nitrogen at least 20 mg/dL, leukopenia below 4000 cells per microliter, thrombocytopenia below 100000 cells per microliter, hypothermia below 36 C, and hypotension requiring aggressive fluid resuscitation.",
+    "source": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf"
+  },
+  {
+    "id": "CDC_CAUSES",
+    "topic": "causes",
+    "title": "CDC - About Pneumonia",
+    "section": "Causes",
+    "keywords": "causes bacteria viruses fungi parasites infection germs",
+    "text": "Pneumonia is an infection of the lungs. It can be caused by bacteria, viruses, fungi, and parasites. Bacteria and viruses are common causes, while fungi and parasites are less common.",
+    "source": "https://www.cdc.gov/pneumonia/about/"
+  }
+]

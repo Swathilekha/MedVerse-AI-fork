@@ -1,0 +1,21 @@
+{
+    "model": "Clinical Text-Only TF-IDF + Logistic Regression",
+    "validation_records": 1188,
+    "accuracy": 0.9747474747474747,
+    "precision": 0.8833333333333333,
+    "recall": 0.9464285714285714,
+    "f1_score": 0.9137931034482759,
+    "roc_auc": 0.9948004201680672,
+    "pr_auc": 0.9524501249599601,
+    "balanced_accuracy": 0.9629201680672268,
+    "confusion_matrix": [
+        [
+            999,
+            21
+        ],
+        [
+            9,
+            159
+        ]
+    ]
+}

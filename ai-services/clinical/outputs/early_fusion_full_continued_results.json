@@ -1,0 +1,158 @@
+{
+    "model": "Full Early Fusion",
+    "fusion_type": "Trainable feature-level fusion",
+    "image_encoder": "DenseNet121",
+    "text_encoder": "2-layer bidirectional LSTM",
+    "image_encoder_trainable": true,
+    "text_encoder_trainable": true,
+    "total_records": 5974,
+    "train_records": 4786,
+    "validation_records": 1188,
+    "vocabulary_size": 2888,
+    "warm_started": true,
+    "warm_started_from_epoch": 2,
+    "initial_best_val_roc_auc": 0.9980392156862745,
+    "best_epoch": 5,
+    "best_val_roc_auc": 0.999156746031746,
+    "final_metrics": {
+        "accuracy": 0.9907407407407407,
+        "precision": 0.9485714285714286,
+        "recall": 0.9880952380952381,
+        "f1_score": 0.967930029154519,
+        "roc_auc": 0.999156746031746,
+        "confusion_matrix": [
+            [
+                1011,
+                9
+            ],
+            [
+                2,
+                166
+            ]
+        ],
+        "loss": 0.14290329228970222
+    },
+    "training_history": [
+        {
+            "continuation_epoch": 1,
+            "overall_epoch": 3,
+            "train": {
+                "accuracy": 0.993940660259089,
+                "precision": 0.9674220963172805,
+                "recall": 0.9912917271407837,
+                "f1_score": 0.9792114695340501,
+                "roc_auc": 0.998000058806171,
+                "confusion_matrix": [
+                    [
+                        4074,
+                        23
+                    ],
+                    [
+                        6,
+                        683
+                    ]
+                ],
+                "loss": 0.08493299863410378
+            },
+            "validation": {
+                "accuracy": 0.9873737373737373,
+                "precision": 0.9526627218934911,
+                "recall": 0.9583333333333334,
+                "f1_score": 0.9554896142433235,
+                "roc_auc": 0.9982551353874883,
+                "confusion_matrix": [
+                    [
+                        1012,
+                        8
+                    ],
+                    [
+                        7,
+                        161
+                    ]
+                ],
+                "loss": 0.19485170959247283
+            }
+        },
+        {
+            "continuation_epoch": 2,
+            "overall_epoch": 4,
+            "train": {
+                "accuracy": 0.9977016297534476,
+                "precision": 0.9884726224783862,
+                "recall": 0.9956458635703919,
+                "f1_score": 0.9920462762111352,
+                "roc_auc": 0.9992590776712614,
+                "confusion_matrix": [
+                    [
+                        4089,
+                        8
+                    ],
+                    [
+                        3,
+                        686
+                    ]
+                ],
+                "loss": 0.03147613679284192
+            },
+            "validation": {
+                "accuracy": 0.9890572390572391,
+                "precision": 0.9585798816568047,
+                "recall": 0.9642857142857143,
+                "f1_score": 0.9614243323442137,
+                "roc_auc": 0.9989408263305322,
+                "confusion_matrix": [
+                    [
+                        1013,
+                        7
+                    ],
+                    [
+                        6,
+                        162
+                    ]
+                ],
+                "loss": 0.24648365830052651
+            }
+        },
+        {
+            "continuation_epoch": 3,
+            "overall_epoch": 5,
+            "train": {
+                "accuracy": 0.9974926870037609,
+                "precision": 0.9898697539797395,
+                "recall": 0.9927431059506531,
+                "f1_score": 0.991304347826087,
+                "roc_auc": 0.9997849677965364,
+                "confusion_matrix": [
+                    [
+                        4090,
+                        7
+                    ],
+                    [
+                        5,
+                        684
+                    ]
+                ],
+                "loss": 0.04484672047778288
+            },
+            "validation": {
+                "accuracy": 0.9907407407407407,
+                "precision": 0.9485714285714286,
+                "recall": 0.9880952380952381,
+                "f1_score": 0.967930029154519,
+                "roc_auc": 0.999156746031746,
+                "confusion_matrix": [
+                    [
+                        1011,
+                        9
+                    ],
+                    [
+                        2,
+                        166
+                    ]
+                ],
+                "loss": 0.14290329228970222
+            }
+        }
+    ],
+    "note": "Warm-start continuation from the saved Early Fusion model. Optimizer and scheduler states were not restored because they were not present in the original checkpoint."
+}

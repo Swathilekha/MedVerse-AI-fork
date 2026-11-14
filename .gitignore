@@ -1,0 +1,56 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Frontend
+node_modules/
+dist/
+build/
+
+# Database and patient uploads
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+backend/uploads/
+
+# Large archives
+*.zip
+*.7z
+*.rar
+
+# Model weights
+*.pth
+*.pt
+*.onnx
+*.h5
+*.keras
+
+# Large/private datasets
+data/*.csv
+data/*.json
+data/**/*.csv
+data/**/*.json
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+# Large medical image datasets
+data/chexpert_final/
+data/chexpert_prepared/
+
+# Generated feature arrays
+data/**/*.npz
+
+data/

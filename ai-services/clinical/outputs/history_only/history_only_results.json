@@ -1,0 +1,21 @@
+{
+    "model": "Clinical History-Only TF-IDF + Logistic Regression",
+    "validation_records": 723,
+    "accuracy": 0.8976486860304288,
+    "precision": 0.7218045112781954,
+    "recall": 0.7218045112781954,
+    "f1_score": 0.7218045112781954,
+    "roc_auc": 0.895609787179814,
+    "pr_auc": 0.7620347326112029,
+    "balanced_accuracy": 0.8295463234357079,
+    "confusion_matrix": [
+        [
+            553,
+            37
+        ],
+        [
+            37,
+            96
+        ]
+    ]
+}
